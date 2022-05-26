@@ -1,3 +1,23 @@
+:root {
+  --gray: #3A8078;
+  --light-blue: #009CFA;
+  --red: #E25454;
+}
+
+html {
+  --text:#000000;
+  --background: #F5F5F5;
+  --other-text: #F3F3F3;
+  --other-background: #25384C;
+}
+
+.dark {
+  --text: #F3F3F3;
+  --background: #25384C;
+  --other-text:#000000;
+  --other-background: #F5F5F5;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,17 +25,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  background-color: var(--background);
 }
 
 * {
