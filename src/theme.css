@@ -2,6 +2,8 @@
   --gray: #3A8078;
   --light-blue: #009CFA;
   --red: #E25454;
+  --white: #F3F3F3;
+  --black: #000000;
 }
 
 html {
@@ -16,10 +18,11 @@ html {
   --background: #25384C;
   --other-text:#000000;
   --other-background: #F5F5F5;
+  color-scheme: dark;
 }
 
 body {
-  margin: 0;
+  padding: 72px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -30,4 +33,10 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  pointer-events: none;
 }

@@ -1,23 +1,28 @@
-// Container
-
-.container {
+.main {
   width: 100%;
-  max-width: 480px;
   background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  & > .container {
+    width:90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    & > div {
+      & > h1 , & > p{
+       text-align: center;
+       color: var(--text);
+       font-weight: 600;
+     }
+     & > h1{
+       font-size: 4.3rem;
+     }
+     & > p {
+       font-size: 3rem;
+     }
+    }
+  }
 }
 
-// Header
-.header {
-  h1 {
-    font-weight: 800;
-    font-size: 2rem;
-    margin: 0;
-    margin-bottom: 6px;
-  }
-
-  h3 {
-    font-weight: 300;
-    font-size: 1.25rem;
-    margin: 0;
-  }
-}

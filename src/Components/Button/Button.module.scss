@@ -1,0 +1,32 @@
+.primary {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background-color: var(--light-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+.secundary {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+
+.primary:hover, .secundary:hover {
+    opacity: 0.7;
+}
