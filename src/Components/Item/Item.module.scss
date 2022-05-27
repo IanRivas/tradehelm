@@ -1,0 +1,32 @@
+.container {
+    height: 104px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    border: 1px solid var(--gray);
+    border-radius: 15px;
+    & > span {
+        color: var(--black);
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        & > button {
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        & > :first-child {
+            background-color: var(--light-blue);
+        }
+        & > :last-child {
+            background-color: hsla(360, 71%, 61%, 1);
+        }
+    }
+}

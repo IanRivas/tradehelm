@@ -5,7 +5,7 @@ export default function appReducer(state: ListState[], action: ListAction): List
   switch (action.type) {
     case ListActionType.ADD:
       return [...state, action.payload];
-    case ListActionType.UPDATE: {
+    case ListActionType.EDIT: {
       const edited = state.map((value) => {
         if (value.id === action.payload.id) {
           return {...value, item: action.payload.item};

@@ -1,13 +1,16 @@
-import * as React from "react";
+import React, {useState} from "react";
 
 import Header from "../Components/Header";
 import Button from "../Components/Button";
+import Modal from "../Components/Modal";
+import Item from "../Components/Item";
 import {useList} from "../Context/ListProvider";
 
 import styles from "./App.module.scss";
 
 const App: React.FC = () => {
-  const {addItem, deleteItem, updateItem} = useList();
+  const {state} = useList();
+  const [visible, setVisible] = useState(false);
 
   return (
     <>
@@ -16,15 +19,11 @@ const App: React.FC = () => {
         <div className={styles.container}>
           <div>
             <h1>Supermarket list</h1>
-            <p>0 item(s)</p>
+            <p>{state ? state.length : 0} item(s)</p>
           </div>
-          <Button text="Add" type="primary" onClick={() => addItem("helado")} />
-          <Button text="delete" type="secundary" onClick={() => deleteItem("dlkjlfa1")} />
-          <Button
-            text="edit"
-            type="primary"
-            onClick={() => updateItem("lfajldjf12", "pastelitos")}
-          />
+          <div>{state && state.map((value) => <Item key={value.id} listItem={value} />)}</div>
+          <Button text="Add" type="primary" onClick={() => setVisible(!visible)} />
+          <Modal show={() => setVisible(!visible)} visible={visible} />
         </div>
       </main>
     </>

@@ -1,6 +1,6 @@
 export enum ListActionType {
   ADD = "ADD-ITEM",
-  UPDATE = "UPDATE-ITEM",
+  EDIT = "EDIT-ITEM",
   DELETE = "DELETE-ITEM",
 }
 
