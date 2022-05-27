@@ -36,6 +36,7 @@
         & > div {
             display: flex;
             gap: 45px;
+            height: 100px;
         }
     }
     & > :last-child {
@@ -49,4 +50,29 @@
 
 .hide {
     display: none;
+}
+
+@media (max-width:950px) {
+    .container{
+        & > :first-child {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .container{
+        & > :first-child {
+            & > h3 {
+                font-size: 2rem;
+            }
+            & > input {
+                height: 70px;
+                font-size: 2rem;
+            }
+            & > div {
+                height: 70px;
+            }
+        }
+    }
 }

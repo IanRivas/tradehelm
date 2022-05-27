@@ -1,5 +1,5 @@
 .primary {
-    min-height: 100px;
+    height: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
     font-weight: 500;
 }
 .secundary {
-    min-height: 100px;
+    height: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -29,4 +29,10 @@
 
 .primary:hover, .secundary:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 450px) {
+    .secundary, .primary {
+        font-size: 1.5rem;
+    }
 }

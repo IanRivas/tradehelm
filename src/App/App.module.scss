@@ -28,6 +28,24 @@
       flex-direction: column;
       gap: 20px;
     }
+    & > :nth-child(3) {
+      display: flex;
+      height: 100px;
+    }
   }
 }
 
+@media (max-width:450px) {
+  .main {
+    & > .container {
+      & > :first-child {
+        & > h1{
+          font-size: 2rem;
+        }
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -22,16 +22,23 @@ const listContext = createContext<contextType>(defaultState);
 //   {id: "lfajldjf12", item: "cerveza"},
 // ];
 
-export default function ListProvider({children}: {children: React.ReactNode}): JSX.Element {
-  const [state, dispatch] = useReducer(appReducer, []);
+const waitFor = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  const addItem = (item: string) => {
+export default function ListProvider({children}: {children: React.ReactNode}): JSX.Element {
+  const localStorageList = JSON.parse(localStorage.getItem("list") || "[]");
+
+  const [state, dispatch] = useReducer(appReducer, localStorageList);
+
+  const addItem = async (item: string) => {
+    await waitFor(500);
     dispatch({type: ListActionType.ADD, payload: {id: v4(), item}});
   };
-  const editItem = (id: string, item: string) => {
+  const editItem = async (id: string, item: string) => {
+    await waitFor(500);
     dispatch({type: ListActionType.EDIT, payload: {id, item}});
   };
-  const deleteItem = (id: string) => {
+  const deleteItem = async (id: string) => {
+    await waitFor(500);
     dispatch({type: ListActionType.DELETE, payload: {id, item: ""}});
   };
 

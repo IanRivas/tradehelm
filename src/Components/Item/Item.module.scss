@@ -28,5 +28,15 @@
         & > :last-child {
             background-color: hsla(360, 71%, 61%, 1);
         }
+        & > button:hover {
+            opacity: 0.8;
+        }
     }
+}
+
+@media (max-width: 500px) {
+   .container{
+       height: 200px;
+       flex-direction: column;
+   }
 }

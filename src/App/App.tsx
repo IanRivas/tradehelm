@@ -22,7 +22,9 @@ const App: React.FC = () => {
             <p>{state ? state.length : 0} item(s)</p>
           </div>
           <div>{state && state.map((value) => <Item key={value.id} listItem={value} />)}</div>
-          <Button text="Add" type="primary" onClick={() => setVisible(!visible)} />
+          <div>
+            <Button text="Add item" type="primary" onClick={() => setVisible(!visible)} />
+          </div>
           <Modal show={() => setVisible(!visible)} visible={visible} />
         </div>
       </main>
