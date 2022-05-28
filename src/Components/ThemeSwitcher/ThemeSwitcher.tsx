@@ -7,6 +7,14 @@ import styles from "./ThemeSwitcher.module.scss";
 const ThemeSwitcher: React.FC = () => {
   const {theme, toggleTheme} = useTheme();
 
+  const handleTheme = () => {
+    if (theme === "dark") {
+      toggleTheme("light");
+    } else if (theme === "light") {
+      toggleTheme("dark");
+    }
+  };
+
   return (
     <div className={styles.container}>
       <button
@@ -16,6 +24,10 @@ const ThemeSwitcher: React.FC = () => {
         Light
       </button>
       <div>
+        <button
+          className={theme === "dark" ? styles.leftBtn : styles.rightBtn}
+          onClick={handleTheme}
+        />
         <div className={theme === "dark" ? styles.right : styles.left} />
       </div>
       <button

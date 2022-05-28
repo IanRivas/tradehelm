@@ -18,6 +18,7 @@
         background-color: var(--other-background);
         border-radius: 20px;
         position: relative;
+        overflow: hidden;
         & > div {
             width: 22px;
             height: 22px;
@@ -33,8 +34,30 @@
         & > .right {
             left: 50px;
         }
+        & > button {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            cursor: pointer;
+        }
+        & > .leftBtn {
+            left: 0;
+        }
+        & > .rightBtn {
+            left: 40px;
+        }
     }
     & > .grayText {
         color: var(--gray);
+    }
+}
+
+@media (max-width:475px) {
+    .container{
+        & > button {
+            display: none;
+        }
     }
 }
