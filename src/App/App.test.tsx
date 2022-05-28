@@ -6,7 +6,7 @@ import App from "./App";
 test("renders intro text", () => {
   render(<App />);
 
-  const introElement = screen.getByText(/Lets get this party started/i);
+  const PageTitle = screen.getByText("Supermarket list");
 
-  expect(introElement).toBeInTheDocument();
+  expect(PageTitle).toBeInTheDocument();
 });

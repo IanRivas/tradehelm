@@ -1,6 +1,5 @@
 # Todo
 
-- Responsive
-- Testing
 - Deploy
+- Readme
 - Post on Linkedin

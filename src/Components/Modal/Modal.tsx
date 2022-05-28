@@ -21,7 +21,7 @@ const Modal: React.FC<props> = ({visible, show}) => {
   };
 
   return (
-    <div className={visible ? styles.container : styles.hide}>
+    <div className={visible ? styles.container : styles.hide} data-cy="modal">
       <div>
         <h3>Add item</h3>
         <input autoFocus type="text" value={input} onChange={(e) => setInput(e.target.value)} />
@@ -49,7 +49,6 @@ export const ModalEdit: React.FC<propsEdit> = ({visible, show, id, item}) => {
   const handleEdit = () => {
     editItem(id, input);
     show();
-    setInput("");
   };
 
   return (
