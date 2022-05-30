@@ -46,6 +46,11 @@
           font-size: 1.5rem;
         }
       }
+      & > :nth-child(3) {
+       & > button {
+         font-size: 2.75rem;
+       }
+    }
     }
   }
 }
