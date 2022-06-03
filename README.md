@@ -14,11 +14,16 @@ https://github.com/goncy/tradehelm-challenge
 - Sass module
 - Jest + React Testing Library
 - Cypress
+- Github Action
 - Firebase for deploy
 
 ## Visit Page
 
 https://tradehelm-challenge-20d33.firebaseapp.com/
+
+# Figma Draft
+
+https://www.figma.com/file/pDFMNKRdWjtgopIdlTNPhB/Tradehelm-Challenge?node-id=0%3A1
 
 ## Start Project
 
