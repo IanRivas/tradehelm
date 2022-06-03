@@ -21,7 +21,7 @@ https://github.com/goncy/tradehelm-challenge
 
 https://tradehelm-challenge-20d33.firebaseapp.com/
 
-# Figma Draft
+## Figma Draft
 
 https://www.figma.com/file/pDFMNKRdWjtgopIdlTNPhB/Tradehelm-Challenge?node-id=0%3A1
 
@@ -42,4 +42,4 @@ https://www.figma.com/file/pDFMNKRdWjtgopIdlTNPhB/Tradehelm-Challenge?node-id=0%
 - npm start
 - open other terminal
 - npm run cypress
-- ./cypress/videos in this folder you can watch in the video the test running
+
