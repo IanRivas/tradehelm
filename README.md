@@ -1,6 +1,6 @@
 # Tradehelm Challenge
 
-![page Screen](./public/tradehelmPage.jpg)
+![page Screen](./public/tradehelmPageEN.jpg)
 
 ## In this Github Repository you can get all the details of the challenge.
 
